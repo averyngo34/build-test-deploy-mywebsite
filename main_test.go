@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// Test for file existing
 func Test_filesExist(t *testing.T) {
 	tests := []struct {
 		input string

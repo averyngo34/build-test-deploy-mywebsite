@@ -19,18 +19,60 @@
     }
 
     .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3506&q=80');
+      background-image: url('https://webstorageavery.blob.core.windows.net/my-website/background.jpg?sp=r&st=2022-02-16T17:55:58Z&se=2022-05-17T00:55:58Z&spr=https&sv=2020-08-04&sr=b&sig=VkPijYrL5nfGC3Z%2F3L%2Bj0WPS4Ig5VvKBbFF9vH%2BU9rQ%3D');
       min-height: 100%;
       background-position: center;
       background-size: cover;
     }
+
+    .japanimg {
+      background-image: url('https://webstorageavery.blob.core.windows.net/my-website/japan.jpg?sp=r&st=2022-02-16T18:08:52Z&se=2022-05-17T01:08:52Z&spr=https&sv=2020-08-04&sr=b&sig=9pD66F4jn72ZCczYzSuBQCA6KkV8d4%2BUWbIY66JPUTo%3D');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .taiwanimg {
+      background-image: url('https://webstorageavery.blob.core.windows.net/my-website/taiwan.jpg?sp=r&st=2022-02-16T18:08:29Z&se=2022-05-17T01:08:29Z&spr=https&sv=2020-08-04&sr=b&sig=ebIFn3%2Bk92KCX00XLdlVBogkE4QIRxt%2BsbNjv0pHfqs%3D');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .thailandimg {
+      background-image: url('https://webstorageavery.blob.core.windows.net/my-website/thailand.jpg?sp=r&st=2022-02-16T18:08:04Z&se=2022-05-17T01:08:04Z&spr=https&sv=2020-08-04&sr=b&sig=zxoCGYZtsE9BXhYv%2B7qpuEsKAnYtvcDiRZG0bH%2Bdu0w%3D');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .drimg {
+      background-image: url('https://webstorageavery.blob.core.windows.net/my-website/dominican_republic.jpg?sp=r&st=2022-02-16T18:07:21Z&se=2022-05-17T01:07:21Z&spr=https&sv=2020-08-04&sr=b&sig=MmjNg4HxQqTrVABi8l%2F7kUDNdI25CmZ7JRd4XxARppY%3D');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    header, footer {
+      width: 100%;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #000;
+      display: block;
+      padding: 1em 0;
+      text-align: center;
+      width: column;
+    }
+    
   </style>
 </head>
 
 <body>
 
   {{> 'partials/header' }}
-  {{embed}}
+  {{embed}} {{!allow us to grab the handlebar index.hbs }}
   {{> 'partials/footer' }}
 
 </body>

@@ -1,3 +1,4 @@
+# Build
 FROM golang:1.17.6-alpine3.15 as build
 
 WORKDIR /home
@@ -18,8 +19,10 @@ RUN GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o website
 
 RUN chmod +x website
 
+# multi-layer docker image to copy docker image built previously 
 FROM alpine:3.15
 
+# copy from build stage
 COPY --from=build home/views /views
 COPY --from=build home/website /
 
